@@ -169,7 +169,7 @@ section {
 .primary-border {
     border-color: #fce138;
 }
-  
+
 .secondary-border {
     border-color: #39a6b2;
 }
@@ -183,7 +183,7 @@ section {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-  }
+}
 
 .step h3{
     color: #024e76;
@@ -195,7 +195,7 @@ section {
     font-size: 26px;
     line-height: 1.5;
     color: #024e76;
-  }
+}
 
 .step-text p {
     color: #39a6b2;
@@ -216,7 +216,7 @@ section {
 .step-img {
     flex: 1 12%;
     margin-right: 20px;
-  }
+}
 
 .step-img img {
     max-width: 100%;
@@ -236,12 +236,12 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-  }
+}
 
 .trainer img {
     width: 100%;
 }
-  
+
 .trainer-bio {
     padding: 25px;
     line-height: 1.3;
@@ -250,13 +250,13 @@ section {
 .trainer-bio h3 {
     font-size: 28px;
 }
-  
+
 .trainer-bio h4 {
     font-weight: lighter;
     font-size: 22px;
     margin-bottom: 15px;
 }
-  
+
 .trainer-bio p {
     font-size: 17px;
 }
@@ -293,7 +293,7 @@ section {
     color: #fce138;
     font-size: 32px;
 }
-  
+
 .contact-info p, .contact-info address {
     margin: 20px 0;
     line-height: 1.5;
@@ -329,28 +329,120 @@ section {
 .text-left {
     text-align: left;
 }
-  
+
 .text-right {
     text-align: right;
 }
 
 .flex-row {
     display: flex;
-  }
-  
+}
 /* REACH OUT STYLES END */
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero-cta, .hero-form {
+        width: 100%;
+    }
     
-  }
-  
-  /* MEDIA QUERY FOR TABLETS AND SMALLER */
-  @media screen and (max-width: 768px) {
+    .hero-cta {
+        text-align: center;
+    }
 
-  }
-  
-  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-  @media screen and (max-width: 575px) {
+    .section-title {
+        width: 80%;
+    }
 
-  }
+    .trainer {
+        flex: 0 70%;
+    }
+
+    .contact-info iframe{
+        flex: 1 100%;
+    }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    section {
+        padding: 30px 15px;
+    }
+    
+    .step h3 {
+        flex: 1 100%;
+        text-align: center;
+    }
+    
+    .step-info {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .step-img {
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .step-text {
+        flex: 100%;  
+    }
+
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    .hero-form button {
+        width: 100%;
+    }
+    
+    .section-title {
+        width: 95%;
+    }
+    
+    .intro p {
+        width: 100%;
+    }
+    
+    .trainer {
+        flex: 0 100%;
+    }
+    
+    .contact-info {
+        text-align: center;
+    }
+    
+      .contact-info > * {
+        flex: 0 100%;
+    }
+    .contact-form {
+        order: 3;
+    }
+}  
